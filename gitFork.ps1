@@ -1,7 +1,7 @@
-﻿param([string]$repo="gsc", 
-      [string]$remote="urbanit",
-      [string]$upstream="RFAssurance",
-      [string]$branch="dev")
+param([string]$repo, # repo name
+      [string]$remote="urbanit", # your user name
+      [string]$upstream="RFAssurance", # project admin user name
+      [string]$branch="dev") # default branch
 
 $ElapsedTime = [System.Diagnostics.Stopwatch]::StartNew()
 if (-Not ($repo)) 
